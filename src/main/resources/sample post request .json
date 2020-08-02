@@ -1,0 +1,62 @@
+[
+  {
+    "firstname": "Jeff",
+    "lastname": "Bezos",
+    "country": "United States",
+    "company": "Amazon"
+  },
+  {
+    "firstname": "Bill",
+    "lastname": "Gates",
+    "country": "United States",
+    "company": "Microsoft"
+  },
+  {
+    "firstname": "Bernard",
+    "lastname": "Arnault",
+    "country": "France",
+    "company": "LVMH"
+  },
+  {
+    "firstname": "Warren",
+    "lastname": "Buffett",
+    "country": "United States",
+    "company": "Berkshire Hathaway"
+  },
+  {
+    "firstname": "Larry",
+    "lastname": "Ellison",
+    "country": "United States",
+    "company": "Oracle Corporation"
+  },
+  {
+    "firstname": "Amancio",
+    "lastname": "Ortega",
+    "country": "Spain",
+    "company": "Zara"
+  },
+  {
+    "firstname": "Mark",
+    "lastname": "Zuckerberg",
+    "country": "United States",
+    "company": "Facebook"
+  },
+  {
+    "firstname": "Jim",
+    "lastname": "Walton",
+    "country": "United States",
+    "company": "Walmart"
+  },
+  {
+    "firstname": "Alice",
+    "lastname": "Walton",
+    "country": "United States",
+    "company": "Walmart"
+  },
+  {
+    "firstname": "Robson",
+    "lastname": "Walton",
+    "country": "United States",
+    "company": "Walmart"
+  }
+]

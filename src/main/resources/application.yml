@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: couchebase-sample
+  couchbase:
+    bootstrap-hosts: localhost
+    auto-index: true
+    bucket:
+      name: test
+      username: test
+      password: test@123
+
+  server:
+  port: 8080
+
+logging:
+  level:
+    com.couchbase.client.core.endpoint.Endpoint: OFF
+    org.springframework: DEBUG
+
+person:
+  document:
+    expiry: 600000 #10 mins
+---
+spring:
+  data:
+    couchbase:
+      auto-index: true
+---
+spring:
+  http:
+    log-request-details: true

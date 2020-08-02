@@ -1,0 +1,91 @@
+---
+curl --location --request POST 'http://localhost:8080/persons' \
+--header 'Content-Type: application/json' \
+--data-raw '[
+  {
+    "firstname": "Jeff",
+    "lastname": "Bezos",
+    "country": "United States",
+    "company": "Amazon"
+  },
+  {
+    "firstname": "Bill",
+    "lastname": "Gates",
+    "country": "United States",
+    "company": "Microsoft"
+  },
+  {
+    "firstname": "Bernard",
+    "lastname": "Arnault",
+    "country": "France",
+    "company": "LVMH"
+  },
+  {
+    "firstname": "Warren",
+    "lastname": "Buffett",
+    "country": "United States",
+    "company": "Berkshire Hathaway"
+  },
+  {
+    "firstname": "Larry",
+    "lastname": "Ellison",
+    "country": "United States",
+    "company": "Oracle Corporation"
+  },
+  {
+    "firstname": "Amancio",
+    "lastname": "Ortega",
+    "country": "Spain",
+    "company": "Zara"
+  },
+  {
+    "firstname": "Mark",
+    "lastname": "Zuckerberg",
+    "country": "United States",
+    "company": "Facebook"
+  },
+  {
+    "firstname": "Jim",
+    "lastname": "Walton",
+    "country": "United States",
+    "company": "Walmart"
+  },
+  {
+    "firstname": "Alice",
+    "lastname": "Walton",
+    "country": "United States",
+    "company": "Walmart"
+  },
+  {
+    "firstname": "Robson",
+    "lastname": "Walton",
+    "country": "United States",
+    "company": "Walmart"
+  }
+]'
+
+---
+curl --location --request GET 'http://localhost:8080/person/id?id=373ff9f9-f20d-411f-a964-c17129f661bf' \
+--header 'Content-Type: application/json'
+---
+curl --location --request GET 'http://localhost:8080/persons' \
+--header 'Content-Type: application/json'
+---
+curl --location --request GET 'http://localhost:8080/person/count' \
+--header 'Content-Type: application/json'
+---
+curl --location --request DELETE 'http://localhost:8080/person/044f4c4a-8f34-4702-b0ee-5e61edc72a06' \
+--header 'Content-Type: application/json'
+---
+curl --location --request DELETE 'http://localhost:8080/persons' \
+--header 'Content-Type: application/json'
+---
+curl --location --request GET 'http://localhost:8080/person/firstname?firstName=Bill' \
+--header 'Content-Type: application/json'
+---
+curl --location --request GET 'http://localhost:8080/person/lastname?lastName=Bill' \
+--header 'Content-Type: application/json'
+---
+curl --location --request GET 'http://localhost:8080/person/country?country=United%20States' \
+--header 'Content-Type: application/json'
+---
